@@ -11,6 +11,7 @@ public class StringUtilsTest {
 	public void testName() throws Exception {
 		assertEquals(StringUtils.isEmpty(""), true);
 		assertEquals(StringUtils.isEmpty(null), true);
+		
 	}
 	
 }
