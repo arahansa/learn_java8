@@ -32,4 +32,10 @@ public class OperationTest {
         assertEquals(3L, apply, 0.01);
     }
 
+    @Test
+    public void 람다로이늄더하기() throws Exception{
+        double apply = OperationLambda.PLUS.apply(1, 2);
+        assertEquals(3L, apply, 0.01);
+    }
+
 }
