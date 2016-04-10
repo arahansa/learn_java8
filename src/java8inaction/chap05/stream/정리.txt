@@ -1,0 +1,16 @@
+filter
+distinct
+skip
+limit
+map
+flatmap
+sorted
+anyMatch
+noneMatch
+allMatch
+findAny
+findFirst
+forEach
+collect
+Reduce
+count

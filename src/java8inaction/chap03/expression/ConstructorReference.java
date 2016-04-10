@@ -1,4 +1,4 @@
-package chap03.expression;
+package java8inaction.chap03.expression;
 
 import java.util.function.BiFunction;
 import java.util.function.Function;

@@ -1,4 +1,4 @@
-package chap05.stream;
+package java8inaction.chap05.stream;
 
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import java8inaction.common.Dish;
+import java8inaction.common.DishHolder;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -23,11 +25,7 @@ public class J01_Filtering {
 			//.limit(3)
 			.forEach(System.out::println);
 		
-		List<Dish> dishes = Arrays.asList(
-				new Dish(Type.MEAT, 500, true, "gogi"), new Dish(Type.SALAD, 200, false, "salad"),
-				new Dish(Type.SALAD, 200, false, "pizza"), new Dish(Type.SALAD, 200, false, "yangpa"),
-				new Dish(Type.MEAT, 400, true, "salsa"), new Dish(Type.MEAT, 300, true, "yangpa")
-				);
+		List<Dish> dishes = DishHolder.dishes;
 		
 		System.out.println("베지테리언 음식 출력");
 		dishes.stream()
@@ -66,15 +64,5 @@ public class J01_Filtering {
 		System.out.println("세번째 콜렉트"+collect3);
 		
 	}
-	
-	
-	@Data
-	@AllArgsConstructor
-	public static class Dish{
-		Type type;
-		int calories;
-		boolean vegetarian;
-		String name;
-		
-	}
+
 }

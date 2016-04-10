@@ -1,4 +1,4 @@
-package chap00.summary;
+package java8inaction.chap00.summary;
 
 public class Summary {
 	
