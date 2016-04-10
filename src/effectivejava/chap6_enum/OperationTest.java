@@ -25,4 +25,11 @@ public class OperationTest {
         assertEquals(3L, apply, 0.01);
     }
 
+    @Test
+    public void 상수별로클래스몸체와_별도데이터를갖는이늄자료형() throws Exception{
+        log.info("상수별로클래스몸체와_별도데이터를갖는이늄자료형");
+        final double apply = OperationConstant.PLUS.apply(1, 2);
+        assertEquals(3L, apply, 0.01);
+    }
+
 }
