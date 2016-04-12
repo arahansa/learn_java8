@@ -32,4 +32,13 @@ public class OperationTest {
         assertEquals(3L, apply, 0.01);
     }
 
+    @Test
+    public void 오퍼레이션_맵_테스트() throws Exception{
+        log.info("오퍼레이션_맵_테스트");
+        System.out.println(OperationMap.PLUS);
+        final double plus = OperationMap.fromString("PLUS").apply(1, 2);
+        assertEquals(3L, plus, 0.01);
+    }
+
+
 }
