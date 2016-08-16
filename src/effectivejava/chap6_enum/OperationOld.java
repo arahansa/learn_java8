@@ -1,5 +1,8 @@
 package effectivejava.chap6_enum;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by jarvis on 16. 4. 10..
  */
@@ -15,4 +18,12 @@ public enum  OperationOld {
         }
         throw new AssertionError("Unknown op : " + this);
     }
+    
+    private static final Map<String, OperationOld> stringToEnum = 
+    		new HashMap<>();
+    
+    private OperationOld() {
+    	
+	}
+    
 }
