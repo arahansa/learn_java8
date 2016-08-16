@@ -6,7 +6,7 @@ public class LombokBuilderTest {
 
 	
 	public static void main(String[] args) {
-		LombokBuilderBuilder cky = LombokBuilder.builder().age(20).name("arahansa");
+		LombokBuilder cky = LombokBuilder.builder().age(20).name("arahansa").testValue("testValue").build();
 		System.out.println(cky);
 	}
 }

@@ -1,12 +1,27 @@
 package etc.string;
 
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
 public class SubStringTest {
 
-	public static void main(String[] args) {
-		String url ="db_test";
-		System.out.println(url.substring(3));
+	@Test
+	public void testName() throws Exception {
 		
-		String test="";
-		System.out.println(" substirng for '' "+test.substring(5));
+		String fileName = "test.png";
+		printLastname(fileName);
+		printLastname("test");
+		printLastname("");
+		
 	}
+	
+	private void printLastname(String fileName){
+		int lastIndexOf = fileName.lastIndexOf(".");
+		System.out.println("lastIndex of :"+lastIndexOf);
+		String ext = fileName.substring(fileName.lastIndexOf(".")+1);
+		System.out.println("ext: "+ext);
+	}
+	
+	
 }

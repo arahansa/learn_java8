@@ -15,7 +15,5 @@ public class LearnMapStream {
 		testMap.put("hi", "hello");
 		testMap.put("인간", "구구");
 		testMap.keySet().stream().forEach(n->System.out.println(testMap.get(n)));
-		
-		
 	}
 }
